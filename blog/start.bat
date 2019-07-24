@@ -1,1 +1,1 @@
-start mongod --dbpath=C:\Users\modo_\Desktop\TestProjects\node-project\blog\db --port=27018
+start mongod --dbpath=D:\Users\modo_\Desktop\TestProjects\Node项目\node-vue-blog\blog\db --port=27018

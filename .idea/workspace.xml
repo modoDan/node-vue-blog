@@ -2,20 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7861a85b-38ae-4456-a4f9-0571b40e3d56" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/blog/.gitignore" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/blog/db/journal/WiredTigerLog.0000000012" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/blog/db/WiredTiger.wt" afterPath="$PROJECT_DIR$/blog/db/WiredTiger.wt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/blog/db/collection-2-1484571113082865702.wt" afterPath="$PROJECT_DIR$/blog/db/collection-2-1484571113082865702.wt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/blog/db/collection-2-8185034790881905868.wt" afterPath="$PROJECT_DIR$/blog/db/collection-2-8185034790881905868.wt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/blog/db/collection-4-1484571113082865702.wt" afterPath="$PROJECT_DIR$/blog/db/collection-4-1484571113082865702.wt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/blog/db/index-3-1484571113082865702.wt" afterPath="$PROJECT_DIR$/blog/db/index-3-1484571113082865702.wt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/blog/db/index-5-1484571113082865702.wt" afterPath="$PROJECT_DIR$/blog/db/index-5-1484571113082865702.wt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/blog/db/index-6-1484571113082865702.wt" afterPath="$PROJECT_DIR$/blog/db/index-6-1484571113082865702.wt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/blog/db/mongod.lock" afterPath="$PROJECT_DIR$/blog/db/mongod.lock" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/blog/db/sizeStorer.wt" afterPath="$PROJECT_DIR$/blog/db/sizeStorer.wt" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/hello-blog/.gitignore" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/hello-blog" afterPath="$PROJECT_DIR$/hello-blog" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/blog/db/WiredTiger.turtle" afterPath="$PROJECT_DIR$/blog/db/WiredTiger.turtle" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/blog/.gitignore" afterPath="$PROJECT_DIR$/blog/.gitignore" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/blog/start.bat" afterPath="$PROJECT_DIR$/blog/start.bat" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -28,31 +18,11 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="vue.config.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/hello-blog/vue.config.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="210">
-              <caret line="55" column="21" lean-forward="true" selection-start-line="55" selection-start-column="21" selection-end-line="55" selection-end-column="21" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name=".gitignore" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/hello-blog/.gitignore">
+        <entry file="file://$PROJECT_DIR$/blog/.gitignore">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="250">
               <caret line="10" column="15" lean-forward="true" selection-start-line="10" selection-start-column="15" selection-end-line="10" selection-end-column="15" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name=".gitignore" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/blog/.gitignore">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="200">
-              <caret line="8" column="14" lean-forward="true" selection-start-line="8" selection-start-column="14" selection-end-line="8" selection-end-column="14" />
               <folding />
             </state>
           </provider>
@@ -68,11 +38,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="main.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/hello-blog/src/main.js">
+      <file leaf-file-name="start.bat" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/blog/start.bat">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="347">
-              <caret line="22" column="46" lean-forward="false" selection-start-line="22" selection-start-column="44" selection-end-line="22" selection-end-column="46" />
+            <state relative-caret-position="0">
+              <caret line="0" column="67" lean-forward="false" selection-start-line="0" selection-start-column="67" selection-end-line="0" selection-end-column="67" />
               <folding />
             </state>
           </provider>
@@ -81,13 +51,13 @@
       <file leaf-file-name="workspace.xml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="525">
-              <caret line="207" column="46" lean-forward="false" selection-start-line="207" selection-start-column="46" selection-end-line="207" selection-end-column="46" />
+            <state relative-caret-position="975">
+              <caret line="225" column="46" lean-forward="false" selection-start-line="225" selection-start-column="46" selection-end-line="225" selection-end-column="46" />
               <folding>
-                <marker date="1563954584698" expanded="true" signature="40889:40931" ph="..." />
-                <marker date="1563954584698" expanded="true" signature="40889:40949" ph="..." />
-                <marker date="1563954584698" expanded="true" signature="40889:40962" ph="..." />
-                <marker date="1563954584698" expanded="true" signature="40889:40977" ph="..." />
+                <marker date="1563956492474" expanded="true" signature="40804:40846" ph="..." />
+                <marker date="1563956492474" expanded="true" signature="40804:40864" ph="..." />
+                <marker date="1563956492474" expanded="true" signature="40804:40877" ph="..." />
+                <marker date="1563956492474" expanded="true" signature="40804:40892" ph="..." />
               </folding>
             </state>
           </provider>
@@ -111,8 +81,8 @@
       <find>workbox</find>
       <find>showTips</find>
       <find>tipMsgs</find>
-      <find>serviceWorker</find>
       <find>mainRoutes</find>
+      <find>serviceWorker</find>
     </findStrings>
     <replaceStrings>
       <replace />
@@ -120,7 +90,7 @@
   </component>
   <component name="Git.Settings">
     <option name="ROOT_SYNC" value="DONT_SYNC" />
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/hello-blog" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="GradleLocalSettings">
     <option name="externalProjectsViewState">
@@ -141,8 +111,8 @@
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="436" />
-    <option name="y" value="199" />
+    <option name="x" value="450" />
+    <option name="y" value="145" />
     <option name="width" value="1373" />
     <option name="height" value="875" />
   </component>
@@ -171,20 +141,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="node-vue-blog" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="node-vue-blog" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="node-vue-blog" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="hello-blog" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -480,7 +436,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="436" y="199" width="1373" height="875" extended-state="1" />
+    <frame x="450" y="145" width="1373" height="875" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -638,14 +594,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/hello-blog/src/serviceWorker.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="3" column="23" lean-forward="true" selection-start-line="3" selection-start-column="23" selection-end-line="3" selection-end-column="23" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/hello-blog/package.json">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="175">
@@ -654,32 +602,16 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/hello-blog/src/main.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="347">
-          <caret line="22" column="46" lean-forward="false" selection-start-line="22" selection-start-column="44" selection-end-line="22" selection-end-column="46" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="525">
-          <caret line="207" column="46" lean-forward="false" selection-start-line="207" selection-start-column="46" selection-end-line="207" selection-end-column="46" />
+        <state relative-caret-position="975">
+          <caret line="225" column="46" lean-forward="false" selection-start-line="225" selection-start-column="46" selection-end-line="225" selection-end-column="46" />
           <folding>
-            <marker date="1563954584698" expanded="true" signature="40889:40931" ph="..." />
-            <marker date="1563954584698" expanded="true" signature="40889:40949" ph="..." />
-            <marker date="1563954584698" expanded="true" signature="40889:40962" ph="..." />
-            <marker date="1563954584698" expanded="true" signature="40889:40977" ph="..." />
+            <marker date="1563956492474" expanded="true" signature="40804:40846" ph="..." />
+            <marker date="1563956492474" expanded="true" signature="40804:40864" ph="..." />
+            <marker date="1563956492474" expanded="true" signature="40804:40877" ph="..." />
+            <marker date="1563956492474" expanded="true" signature="40804:40892" ph="..." />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/blog/start.bat">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="47" lean-forward="false" selection-start-line="0" selection-start-column="47" selection-end-line="0" selection-end-column="47" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -715,15 +647,39 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/blog/.gitignore">
+    <entry file="file://$PROJECT_DIR$/hello-blog/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="200">
-          <caret line="8" column="14" lean-forward="true" selection-start-line="8" selection-start-column="14" selection-end-line="8" selection-end-column="14" />
+        <state relative-caret-position="250">
+          <caret line="10" column="15" lean-forward="true" selection-start-line="10" selection-start-column="15" selection-end-line="10" selection-end-column="15" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/hello-blog/.gitignore">
+    <entry file="file://$PROJECT_DIR$/blog/start.bat">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="67" lean-forward="false" selection-start-line="0" selection-start-column="67" selection-end-line="0" selection-end-column="67" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/hello-blog/src/main.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="347">
+          <caret line="22" column="16" lean-forward="false" selection-start-line="22" selection-start-column="16" selection-end-line="22" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/hello-blog/src/serviceWorker.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="375">
+          <caret line="15" column="0" lean-forward="true" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/blog/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="250">
           <caret line="10" column="15" lean-forward="true" selection-start-line="10" selection-start-column="15" selection-end-line="10" selection-end-column="15" />
