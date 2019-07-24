@@ -1,0 +1,1 @@
+start mongod --dbpath=C:\Users\modo_\Desktop\TestProjects\node-project\blog\db --port=27018

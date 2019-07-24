@@ -1,0 +1,52 @@
+<!--  
+*Created by modo on 2019/01/09.
+-->
+{% extends 'layout.html'%}
+{%block content%}
+<div class="panel panel-default">
+    <div class="panel-body">
+        <h2>{{content.title}}</h2>
+        <p>
+            作者：<span>{{content.user.username}}</span>
+            时间：<span class="post-time">{{content.addTime|date('Y年m月d日 H:i:s',-8*60)}}</span>
+            阅读：<span>{{content.views}}</span>
+            评论：<span class="comment-num">{{content.comments.length}}</span>
+        </p>
+        <dfn>
+            <p>{{content.content}}
+        </dfn>
+    </div>
+</div>
+<div class="panel panel-default">
+    <div class="panel-body">
+        <h3 class="comment-title"><strong>评论</strong><span>一共有<em id="messageCount" class="comment-num"></em>条评论</span></h3>
+        <p><input type="hidden" id="contentId" value="{{content.id}}"></p>
+        <div class="user-status">
+            {%if userInfo._id%}
+            <p>魔豆</p>
+            <p class="login-status">
+                <textarea name="messageContent" id="messageContent" rows="5"></textarea>
+                <button id="messageBtn">评论</button>
+            </p>
+            {%else%}
+            <p class="logout-status">你还没有登录，请先登录！</p>
+            {%endif%}
+        </div>
+        <div class="messageList">
+        </div>
+        {%if content.comments.length>0 %}
+        <div class="panel panel-default">
+            <nav aria-label="...">
+                <ul class="pager">
+                    <li class="previous"><a href="/?category={{category}}&page={{page-1}}">&larr;上一页</a></li>
+                    <li></li>
+                    <li class="next"><a href="/?category={{category}}&page={{page+1}}">&rarr;下一页</a></li>
+                </ul>
+            </nav>
+        </div>
+        {%endif%}
+    </div>
+</div>
+</div>
+<script src="/public/js/comment.js"></script>
+{%endblock%}

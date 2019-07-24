@@ -1,0 +1,50 @@
+{% extends 'layout.html'%}
+{%block content%}
+{% for content in contents%}
+<div class="panel panel-default">
+    <div class="panel-body">
+        <h2>{{content.title}}</h2>
+        <p>
+            作者：<span>{{content.user.username}}</span>
+            时间：<span>{{content.addTime|date('Y年m月d日 H:i:s',-8*60)}}</span>
+            阅读：<span>{{content.views}}</span>
+            评论：<span>{{content.comments.length}}</span>
+        </p>
+        <dfn>
+            <p>{{content.description}}</p>
+        </dfn>
+        <div>
+            {%if category%}
+            <a href="/view?category={{category}}&contentid={{content.id}}">阅读全文</a>
+            {%else%}
+            <a href="/view?contentid={{content.id}}">阅读全文</a>
+            {%endif%}
+        </div>
+    </div>
+</div>
+{%endfor%}
+{% if contents.length>0%}
+<div class="panel panel-default">
+    <nav aria-label="...">
+        <ul class="pager">
+            {% if page<=1%} <li class="previous"><span>没有上一页了</span></li>
+                {%else%}
+                <li class="previous"><a href="/?category={{category}}&page={{page-1}}">&larr;上一页</a></li>
+                {%endif%}
+                {%if pages > 0%}
+                <li><strong>{{page}}/{{pages}}</strong></li>
+                {%endif%}
+                {% if page>=pages%}
+                <li class="next"><span>没有下一页了</span></li>
+                {%else%}
+                <li class="next"><a href="/?category={{category}}&page={{page+1}}">&rarr;下一页</a></li>
+                {%endif%}
+        </ul>
+    </nav>
+</div>
+{%else%}
+<div class="panel panel-default">
+<img src="/public/image/nodata-icon.png" alt="">
+</div>
+{%endif%}
+{%endblock%}

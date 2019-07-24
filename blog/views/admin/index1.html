@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <!-- import CSS -->
+  <link rel="stylesheet" href="https://unpkg.com/element-ui/lib/theme-chalk/index.css">
+</head>
+<body>
+  <div id="app">
+    <div class="admin">
+    	<h4>后台管理首页</h4>
+    	<!-- 顶部导航 -->
+    	<nav class="navbar">
+			<el-menu
+			  :default-active="activeIndex" class="el-menu-demo" mode="horizontal" @select="handleSelect">
+			  <el-menu-item index="1">首页</el-menu-item>
+			  <el-menu-item index="2">设置</el-menu-item>
+			  <el-submenu index="3">
+			    <template slot="title">分类管理</template>
+			    <el-menu-item index="3-1">列表</el-menu-item>
+			    <el-menu-item index="3-2">添加</el-menu-item>
+			  </el-submenu>
+			  <el-submenu index="4">
+			    <template slot="title">文章管理</template>
+			    <el-menu-item index="4-1">选项1</el-menu-item>
+			    <el-menu-item index="4-2">选项2</el-menu-item>
+			  </el-submenu>
+			  <el-menu-item index="5">评论</el-menu-item>
+			</el-menu>
+			<ul class="navbar-right">
+				<li class="dropdown">
+					<a href="#">{{userInfo.username}}</a>
+				</li>
+			</ul>
+    	</nav>
+    </div>
+  </div>
+</body>
+  <!-- import Vue before Element -->
+  <script src="https://unpkg.com/vue/dist/vue.js"></script>
+  <!-- import JavaScript -->
+  <script src="https://unpkg.com/element-ui/lib/index.js"></script>
+  <script>
+    new Vue({
+      el: '#app',
+      data: function() {
+        return { 
+        	activeIndex: '1',
+        }
+      },
+      methods: {
+      handleSelect(key, keyPath) {
+        console.log(key, keyPath);
+      }
+    }
+    })
+  </script>
+</html>

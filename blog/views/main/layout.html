@@ -1,0 +1,100 @@
+<!--  
+*Created by modo on 2019/01/09.
+-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>blog</title>
+    <link rel="stylesheet" href="/public/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/public/css/bootstrap-theme.min.css">
+    <script src="/public/js/jquery-1.11.1.min.js"></script>
+    <script src="/public/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="/public/css/main.css">
+    <link rel="stylesheet" href="/public/index.css">
+    <script src="/public/js/index.js"></script>
+</head>
+
+<body>
+    <header>
+        <h1 class="blogBg">hello to my blog !!</h1>
+        <ul class="nav nav-pills nav-header">
+            {%if category == ''%}
+            <li role="presentation" class="active"><a href="/">首页</a>
+                {%else%}
+            <li role="presentation"><a href="/">首页</a>
+                {%endif%}
+                {%for cate in categories%}
+                {%if category == cate.id%}
+            <li role="presentation" class="active"><a href="/?category={{cate.id}}">{{cate.name}}</a>
+            </li>
+            {%else%}
+            <li role="presentation"><a href="/?category={{cate.id}}">{{cate.name}}</a>
+            </li>
+            {%endif%}
+            {% endfor %}
+        </ul>
+    </header>
+    <section>
+        <div class="nav-left">
+            {%block content%}{%endblock%}
+        </div>
+        <div class="nav-right">
+            {% if userInfo._id %}
+            <div id="userInfo" class="panel panel-default">
+                 <div class="panel-body">
+                    <h4 class="line-header">
+                        用户信息
+                    </h4>
+                    <div>
+                        <p><span class="username">{{userInfo.username}}</span></p>
+                        {% if userInfo.isAdmin %}
+                        <p><span class="info">你好，管理员!</span><a href="/admin">进入管理页面</a></p>
+                        {% else %}
+                        <p><span class="info">欢迎光临我的blog!</span></p>
+                        {% endif %}
+                        <p><a href="" class="logout">退出登录</a></p>
+                    </div>
+                </div>
+            </div>
+            {% else %}
+            <div id="registerBox" style="display: none;" class="panel panel-default">
+                <div class="panel-body">
+                    <h4 class="line-header">
+                        注册
+                    </h4>
+                    <div class="user-box panel-body">
+                        <p><label for="registname">用户名：</label><input type="text" name="username" id="registname" class="input-form">
+                        </p>
+                        <p><label for="registpassword">密码：</label><input type="password" name="password" id="registpassword" class="input-form">
+                        </p>
+                        <p><label for="repassword">确认密码：</label><input type="password" name="repassword" id="repassword" class="input-form">
+                        </p>
+                        <p><input type="submit" name="submit" value="Register"></p>
+                    </div>
+                    <div>已有账号&nbsp;|&nbsp;<a class="loginBtn">点击登录</a></div>
+                </div>
+            </div>
+            <div id="loginBox" class="panel panel-default">
+                <div class="panel-body">
+                    <h4 class="line-header">
+                        登录
+                    </h4>
+                    <div class="user-box panel-body">
+                        <p><label for="loginname">用户名：</label><input type="text" name="username" id="loginname" class="input-form">
+                        </p>
+                        <p><label for="loginpassword">密码：</label><input type="password" name="password" id="loginpassword" class="input-form">
+                        </p>
+                        <p><input type="submit" name="submit" value="Login"></p>
+                    </div>
+                    <div>还没注册&nbsp;|&nbsp;<a class="registerBtn">马上注册</a></div>
+                </div>
+            </div>
+            <div class="tiptext" style="display: none;"></div>
+            {% endif %}
+        </div>
+    </section>
+</body>
+
+</html>

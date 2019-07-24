@@ -1,0 +1,143 @@
+body{
+	background-color: #eee;
+}
+/*
+*头部header
+**/
+header{
+	background: #fff;
+}
+.nav-header{
+	display: flex;
+	justify-content: center;
+}
+.blogBg{
+	height: 300px;
+	background: url('../image/blog-bg.jpg') no-repeat center / 100% 100%;
+}
+/*
+*正文
+**/
+section{
+	display: flex;
+	justify-content: space-around;
+	margin: 1em 10em 0;
+}
+/*
+*右侧
+**/
+.nav-right{
+	margin-left: 50px;
+	width: 350px;
+}
+
+/*右侧用户登录栏*/
+.line-header{
+	font-weight: bold;
+	font-size: 24px;
+	line-height: 30px;
+	border-bottom: 1px solid #ddd
+}
+.user-box label{
+	display: block;
+}
+.input-form,[name='submit'],.tiptext{
+	height: 40px;
+	width: 100%;
+	border-radius: 5px;
+	outline: none;
+	border: 1px solid #d1d5da;
+}
+[name='submit']{
+	color: #fff;
+	border: none;
+	background-color: #2271c0;
+    background-image: linear-gradient(-180deg,#409eff,#2271c0 90%);
+}
+.tiptext{
+	background-color: #ffdce0;
+    color: #86181d;
+    line-height: 40px;
+    text-indent: 2em;
+}
+/*
+*左侧
+**/
+.nav-left{
+	width: 600px;
+}
+/*用户评论区*/
+.comment-title{
+	display: flex;
+	justify-content: space-between;
+}
+.comment-title span{
+	font-size: 16px;
+}
+.comment-num {
+	color: #337ab7
+}
+/*用户评论区登录状态*/
+.user-status{
+	padding: 0 20px;
+}
+.login-status{
+	display: flex;
+	align-self: center;
+	height: 100px;
+}
+#messageContent{
+	width: 400px;
+	border: 1px solid #337ab7;
+	outline: none;
+	resize:none
+}
+#messageBtn{
+	width: 100px;
+	border:none;
+	background: #337ab7;
+	color: #fff;
+	font-size: 20px
+}
+.logout-status{
+	width: 100%;
+	height: 50px;
+	background: #fffbdd;
+	line-height: 50px;
+	text-align: center;
+	font-size: 18px;
+	color: #735c0f;
+}
+/*评论列表*/
+.messageList{
+	border-top: 1px solid #e6ebf1;
+	padding: 20px;
+    background: #fff;
+    margin-top: 20px
+}
+.messageBox{
+	margin-bottom: 20px;
+    border: 1px solid #d1d5da;
+    border-radius: 3px;
+}
+.messageBox .name{
+	background-color: #f6f8fa;
+    border-bottom: 1px solid #d1d5da;
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+    color: #586069;
+    padding: 0 15px;
+    height: 50px;
+    line-height: 50px;
+	display: flex;
+	justify-content: space-between;
+}
+.messageBox .comments{
+	padding: 0 15px;
+	min-height: 40px;
+}
+.post-time{
+	color: #337ab7;
+}
+
+
